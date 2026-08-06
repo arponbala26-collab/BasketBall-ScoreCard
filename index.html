@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Covered+By+Your+Grace&family=Manrope:wght@200..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="scoreboard-container">
+               <!-- HOME SECTION -->
+             <div class="score-card">
+                <h2 class="card-title">HOME</h2>
+                <div class="score-display" id="home-point">0</div>
+             <div class="btn-group">
+                   <button class="btn" onclick="addscore('home', 1)">+1</button>
+                   <button class="btn" onclick="addscore('home', 2)">+2</button>
+                   <button class="btn" onclick="addscore('home', 3)">+3</button>
+             </div>
+             </div>
+             <!-- GUST SECTION -->
+            <div class="score-card">
+             <h2 class="card-title">GUEST</h2>
+             <div class="score-display" id="Guest-point">0</div>
+                <div class="btn-group">
+                    <button class="btn" onclick="addscore('guest', 1)">+1</button>
+                    <button class="btn" onclick="addscore('guest', 2)" >+2</button>
+                    <button class="btn"  onclick="addscore('guest', 3)">+3</button>
+                </div>
+            </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
